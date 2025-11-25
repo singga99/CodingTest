@@ -1,0 +1,8 @@
+import sys
+
+a, b, c, d, e, f = list(map(int, sys.stdin.readline().strip().split()))
+
+for i in range(-999, 1000):
+    for j in range(-999, 1000):
+        if (a*i + b*j == c) and (d*i + e*j == f):
+            print(i, j)
